@@ -1,0 +1,896 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20181.18.1213.2251                               -->
+<workbook source-build='2018.1.8 (20181.18.1213.2251)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='Prices (1)' inline='true' name='federated.0s0x2hn0ok637313nmbhe091zh5w' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Prices (1)' name='excel-direct.03vgcoo1kp55aw1egdxxc1ynaaau'>
+            <connection class='excel-direct' cleaning='yes' compat='no' dataRefreshTime='' filename='C:/Users/bhara/Downloads/Prices (1).xlsx' interpretationMode='1' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation connection='excel-direct.03vgcoo1kp55aw1egdxxc1ynaaau' name='Daily' table='[Daily$]' type='table'>
+          <columns gridOrigin='A1:AE10001:no:A1:AE10001:6' lost='1' outcome='9' processed='251211'>
+            <column datatype='real' name='F1' ordinal='0' />
+            <column datatype='real' name='F2' ordinal='1' />
+            <column datatype='real' name='F3' ordinal='2' />
+            <column datatype='date' name='Name' ordinal='3' />
+            <column datatype='real' name='Gold price - Key Currencies National Currency Unit per troy ounce USD US dollar' ordinal='4' />
+            <column datatype='real' name='EUR Euro' ordinal='5' />
+            <column datatype='real' name='JPY Japanese yen' ordinal='6' />
+            <column datatype='real' name='GBP Pound sterling' ordinal='7' />
+            <column datatype='real' name='CAD Canadian dollar' ordinal='8' />
+            <column datatype='real' name='CHF Swiss franc' ordinal='9' />
+            <column datatype='real' name='Gold price - Major consumer countries National Currency Unit per troy ounce INR Indian rupee' ordinal='10' />
+            <column datatype='real' name='CNY Chinese renmimbi' ordinal='11' />
+            <column datatype='real' name='USD US dollar' ordinal='12' />
+            <column datatype='real' name='TRY Turkish lira' ordinal='13' />
+            <column datatype='real' name='SAR Saudi riyal' ordinal='14' />
+            <column datatype='real' name='IDR Indonesian rupiah' ordinal='15' />
+            <column datatype='real' name='AED UAE dirham' ordinal='16' />
+            <column datatype='real' name='THB Thai baht' ordinal='17' />
+            <column datatype='real' name='VND Vietnamese dong' ordinal='18' />
+            <column datatype='real' name='EGP Egyptian pound' ordinal='19' />
+            <column datatype='real' name='KRW Korean won' ordinal='20' />
+            <column datatype='real' name='EUR Euro 1' ordinal='21' />
+            <column datatype='real' name='RUB Russian ruble' ordinal='22' />
+            <column datatype='real' name='Gold price - Major producer countries National Currency Unit per troy ounce USD US dollar' ordinal='23' />
+            <column datatype='real' name='ZAR South African rand' ordinal='24' />
+            <column datatype='real' name='CNY Chinese renmimbi 1' ordinal='25' />
+            <column datatype='real' name='CAD Canadian dollar 1' ordinal='26' />
+            <column datatype='real' name='AUD Australian dollar' ordinal='27' />
+            <column datatype='real' name='G5 CCY G5 currency index' ordinal='28' />
+            <column datatype='real' name='PROD IDX Producer index' ordinal='29' />
+            <column datatype='real' name='CONS IDX Consumer index' ordinal='30' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[F1]</local-name>
+            <parent-name>[Daily]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>0</ordinal>
+            <hidden>true</hidden>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F2</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[F2]</local-name>
+            <parent-name>[Daily]</parent-name>
+            <remote-alias>F2</remote-alias>
+            <ordinal>1</ordinal>
+            <hidden>true</hidden>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F3</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[F3]</local-name>
+            <parent-name>[Daily]</parent-name>
+            <remote-alias>F3</remote-alias>
+            <ordinal>2</ordinal>
+            <hidden>true</hidden>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Name</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[Name]</local-name>
+            <parent-name>[Daily]</parent-name>
+            <remote-alias>Name</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Gold price - Key Currencies National Currency Unit per troy ounce USD US dollar</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Gold price - Key Currencies National Currency Unit per troy ounce USD US dollar]</local-name>
+            <parent-name>[Daily]</parent-name>
+            <remote-alias>Gold price - Key Currencies National Currency Unit per troy ounce USD US dollar</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>EUR Euro</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[EUR Euro]</local-name>
+            <parent-name>[Daily]</parent-name>
+            <remote-alias>EUR Euro</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>JPY Japanese yen</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[JPY Japanese yen]</local-name>
+            <parent-name>[Daily]</parent-name>
+            <remote-alias>JPY Japanese yen</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>GBP Pound sterling</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[GBP Pound sterling]</local-name>
+            <parent-name>[Daily]</parent-name>
+            <remote-alias>GBP Pound sterling</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CAD Canadian dollar</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[CAD Canadian dollar]</local-name>
+            <parent-name>[Daily]</parent-name>
+            <remote-alias>CAD Canadian dollar</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CHF Swiss franc</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[CHF Swiss franc]</local-name>
+            <parent-name>[Daily]</parent-name>
+            <remote-alias>CHF Swiss franc</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Gold price - Major consumer countries National Currency Unit per troy ounce INR Indian rupee</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Gold price - Major consumer countries National Currency Unit per troy ounce INR Indian rupee]</local-name>
+            <parent-name>[Daily]</parent-name>
+            <remote-alias>Gold price - Major consumer countries National Currency Unit per troy ounce INR Indian rupee</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CNY Chinese renmimbi</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[CNY Chinese renmimbi]</local-name>
+            <parent-name>[Daily]</parent-name>
+            <remote-alias>CNY Chinese renmimbi</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>USD US dollar</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[USD US dollar]</local-name>
+            <parent-name>[Daily]</parent-name>
+            <remote-alias>USD US dollar</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TRY Turkish lira</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[TRY Turkish lira]</local-name>
+            <parent-name>[Daily]</parent-name>
+            <remote-alias>TRY Turkish lira</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SAR Saudi riyal</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[SAR Saudi riyal]</local-name>
+            <parent-name>[Daily]</parent-name>
+            <remote-alias>SAR Saudi riyal</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>IDR Indonesian rupiah</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[IDR Indonesian rupiah]</local-name>
+            <parent-name>[Daily]</parent-name>
+            <remote-alias>IDR Indonesian rupiah</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AED UAE dirham</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[AED UAE dirham]</local-name>
+            <parent-name>[Daily]</parent-name>
+            <remote-alias>AED UAE dirham</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>THB Thai baht</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[THB Thai baht]</local-name>
+            <parent-name>[Daily]</parent-name>
+            <remote-alias>THB Thai baht</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>VND Vietnamese dong</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[VND Vietnamese dong]</local-name>
+            <parent-name>[Daily]</parent-name>
+            <remote-alias>VND Vietnamese dong</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>EGP Egyptian pound</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[EGP Egyptian pound]</local-name>
+            <parent-name>[Daily]</parent-name>
+            <remote-alias>EGP Egyptian pound</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>KRW Korean won</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[KRW Korean won]</local-name>
+            <parent-name>[Daily]</parent-name>
+            <remote-alias>KRW Korean won</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>EUR Euro 1</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[EUR Euro 1]</local-name>
+            <parent-name>[Daily]</parent-name>
+            <remote-alias>EUR Euro 1</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>RUB Russian ruble</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[RUB Russian ruble]</local-name>
+            <parent-name>[Daily]</parent-name>
+            <remote-alias>RUB Russian ruble</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Gold price - Major producer countries National Currency Unit per troy ounce USD US dollar</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Gold price - Major producer countries National Currency Unit per troy ounce USD US dollar]</local-name>
+            <parent-name>[Daily]</parent-name>
+            <remote-alias>Gold price - Major producer countries National Currency Unit per troy ounce USD US dollar</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ZAR South African rand</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[ZAR South African rand]</local-name>
+            <parent-name>[Daily]</parent-name>
+            <remote-alias>ZAR South African rand</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CNY Chinese renmimbi 1</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[CNY Chinese renmimbi 1]</local-name>
+            <parent-name>[Daily]</parent-name>
+            <remote-alias>CNY Chinese renmimbi 1</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CAD Canadian dollar 1</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[CAD Canadian dollar 1]</local-name>
+            <parent-name>[Daily]</parent-name>
+            <remote-alias>CAD Canadian dollar 1</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AUD Australian dollar</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[AUD Australian dollar]</local-name>
+            <parent-name>[Daily]</parent-name>
+            <remote-alias>AUD Australian dollar</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>G5 CCY G5 currency index</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[G5 CCY G5 currency index]</local-name>
+            <parent-name>[Daily]</parent-name>
+            <remote-alias>G5 CCY G5 currency index</remote-alias>
+            <ordinal>28</ordinal>
+            <hidden>true</hidden>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PROD IDX Producer index</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[PROD IDX Producer index]</local-name>
+            <parent-name>[Daily]</parent-name>
+            <remote-alias>PROD IDX Producer index</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CONS IDX Consumer index</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[CONS IDX Consumer index]</local-name>
+            <parent-name>[Daily]</parent-name>
+            <remote-alias>CONS IDX Consumer index</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Daily]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:AE10001:no:A1:AE10001:6&quot;</attribute>
+              <attribute datatype='integer' name='lost'>1</attribute>
+              <attribute datatype='integer' name='outcome'>9</attribute>
+              <attribute datatype='integer' name='processed'>251211</attribute>
+            </attributes>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='real' hidden='true' name='[F1]' role='measure' type='quantitative' />
+      <column datatype='real' hidden='true' name='[F2]' role='measure' type='quantitative' />
+      <column datatype='real' hidden='true' name='[F3]' role='measure' type='quantitative' />
+      <column datatype='real' hidden='true' name='[G5 CCY G5 currency index]' role='measure' type='quantitative' />
+      <column caption=' INR Indian rupee' datatype='real' name='[Gold price - Major consumer countries National Currency Unit per troy ounce INR Indian rupee]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column datatype='real' name='[USD US dollar]' role='measure' type='quantitative' />
+      <column-instance column='[Gold price - Major consumer countries National Currency Unit per troy ounce INR Indian rupee]' derivation='Sum' name='[sum:Gold price - Major consumer countries National Currency Unit per troy ounce INR Indian rupee:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[USD US dollar]' derivation='Sum' name='[sum:USD US dollar:qk]' pivot='key' type='quantitative' />
+      <layout dim-ordering='alphabetic' dim-percentage='0.0968343' measure-ordering='alphabetic' measure-percentage='0.903166' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#59a14f'>
+              <bucket>&quot;[federated.0s0x2hn0ok637313nmbhe091zh5w].[sum:USD US dollar:qk]&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;[federated.0s0x2hn0ok637313nmbhe091zh5w].[sum:Gold price - Major consumer countries National Currency Unit per troy ounce INR Indian rupee:qk]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>USD vs INR Daily Gold Price Trend&#10;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Prices (1)' name='federated.0s0x2hn0ok637313nmbhe091zh5w' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0s0x2hn0ok637313nmbhe091zh5w'>
+            <column caption=' INR Indian rupee' datatype='real' name='[Gold price - Major consumer countries National Currency Unit per troy ounce INR Indian rupee]' role='measure' type='quantitative' />
+            <column datatype='date' name='[Name]' role='dimension' type='ordinal' />
+            <column datatype='real' name='[USD US dollar]' role='measure' type='quantitative' />
+            <column-instance column='[Gold price - Major consumer countries National Currency Unit per troy ounce INR Indian rupee]' derivation='Sum' name='[sum:Gold price - Major consumer countries National Currency Unit per troy ounce INR Indian rupee:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[USD US dollar]' derivation='Sum' name='[sum:USD US dollar:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Name]' derivation='Day-Trunc' name='[tdy:Name:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.0s0x2hn0ok637313nmbhe091zh5w].[sum:Gold price - Major consumer countries National Currency Unit per troy ounce INR Indian rupee:qk]' included-values='non-null' />
+          <slices>
+            <column>[federated.0s0x2hn0ok637313nmbhe091zh5w].[sum:Gold price - Major consumer countries National Currency Unit per troy ounce INR Indian rupee:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0s0x2hn0ok637313nmbhe091zh5w].[sum:USD US dollar:qk]' field-type='quantitative' fold='true' scope='rows' type='space' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0s0x2hn0ok637313nmbhe091zh5w].[:Measure Names]' />
+            </encodings>
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0s0x2hn0ok637313nmbhe091zh5w].[sum:Gold price - Major consumer countries National Currency Unit per troy ounce INR Indian rupee:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0s0x2hn0ok637313nmbhe091zh5w].[:Measure Names]' />
+            </encodings>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0s0x2hn0ok637313nmbhe091zh5w].[sum:USD US dollar:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0s0x2hn0ok637313nmbhe091zh5w].[:Measure Names]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>([federated.0s0x2hn0ok637313nmbhe091zh5w].[sum:Gold price - Major consumer countries National Currency Unit per troy ounce INR Indian rupee:qk] + [federated.0s0x2hn0ok637313nmbhe091zh5w].[sum:USD US dollar:qk])</rows>
+        <cols>[federated.0s0x2hn0ok637313nmbhe091zh5w].[tdy:Name:qk]</cols>
+      </table>
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.0s0x2hn0ok637313nmbhe091zh5w].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
